@@ -1,0 +1,45 @@
+/* Háttérkép beállítása Á,*/
+body
+{
+    background-image: url("stock_fotok/farming-8210675.jpg"); /* A háttérkép elérési útja Á,*/
+    background-size: cover; /* Az egész háttérkép kitölti az ablakot Á,*/
+    background-position: center; /* A háttérkép középre igazítása Á,*/
+    background-repeat: no-repeat; /* Háttérkép ismétlődésének tiltása Á,*/
+}
+
+.menu {
+    background-color: grey;
+    opacity: 0.6;
+    position: fixed; /* A menü rögzítése Á,*/
+    top: 0; /* A menü a lap tetejére Á,*/
+    width: 100%; /* Teljes szélességű menü Á,*/
+    /*display: flex;  Vízszintes elrendezés Á,*/
+    /*justify-content: space-between;  Elemek elrendezése a menü szélein Á,*/
+    padding: 10px; /* Belső térköz a menüelemek és a menüszél között Á,*/
+}
+
+.menu ul 
+{
+    list-style: none; /* Szabályozza az alárendelt elemek listáját Á,*/
+    display: flex; /* Vízszintes elrendezés Á,*/
+    margin: 0; /* Alapértelmezett margó eltávolítása Á,*/
+    padding: 0; /* Alapértelmezett padding eltávolítása Á,*/
+}
+
+.menu ul li 
+{
+    margin-right: 20px; /* Elemek közötti térköz Á,*/
+}
+
+.menu ul li:last-child 
+{
+   margin-right: 0; /*  Utolsó elem térközének eltávolítása Á,*/
+}
+
+.menu ul li a 
+{
+    color: black; /* Szövegszín beállítása Á,*/
+    text-decoration: none; /* Alapértelmezett hivatkozás stílus eltávolítása Á,*/
+    font-family: Arial, sans-serif; /* Betűtípus beállítása Á,*/
+    font-size: 16px; /* Betűméret beállítása Á,*/
+}
