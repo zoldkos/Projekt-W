@@ -1,0 +1,52 @@
+/*Menusor beállításai.*/
+ul {
+  list-style-type: none;             /*Eltávolítja a navigációs sáv listajelzőit Á,*/
+  margin: 0;                         /* a böngésző alapértelmezett beállításainak eltávolítása Á,*/
+  padding: 0;                        /* a böngésző alapértelmezett beállításainak eltávolítása Á,*/
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;                  /*Le görgetve a menü fent marad. Á,*/
+  top: 0;
+  width: 100%;
+  left: 0;                          /* Hozzáadva azért, hogy a menü balra igazodjon Á,*/
+  display: flex;                    /* Hozzáadva a flex box modell használatához Á,*/
+  justify-content: center;          /* A tartalom középre igazítása Á,*/
+}
+
+li a { /* A lista (hivatkozás) beállításai Á,*/
+  display: block;                     /* Lehetővé teszi számunkra, hogy megadjuk a kitöltést (és a magasságot, szélességet, margókat stb. Á,*/
+  color: white;
+  text-align: center;                 /* Középre igazítás. Á,*/
+  padding: 14px 16px;
+  text-decoration: none;                /*Eltávolítja a lista elem dekorációit. Á,*/
+  font-family: 'Brush Script MT', cursive; /* Font familyvel "Brush Script MT (cursive)" nevű betű típus beállítása. Á, */
+}/* Ha a font family nem az alapértelmezett, hanem át van állítva Brush Script-re akkor az active elem nem teljesen tölti ki
+    a menu elem hátterét, kivéve a főoladalon. Még nem jöttem rá hogyan javítsam. Á,*/
+
+li a:hover:not(.active) {               /* Ha nem aktív akkor #111 szín. Á,*/
+  background-color: #111;           
+}
+
+.active {
+  background-color: #35b944cb;        /* Ha aktív akkor #111 szín. Á,*/
+  padding: 14px 16px; 
+}
+
+.indexkep {
+  width: 100%; /* Kép teljes szélessége a képernyőn */
+  height: 100%; /* Automatikus magasság beállítása a képarány megtartása érdekében */
+  margin-top: 0px; /* Megfelelő távolság biztosítása a menüsor és a kép között */
+  margin-left: -10px;
+}
+
+.bemutatkozas {
+    background-color: #edf2e3;
+    margin-top: 50px; 
+    padding-top: 20px; /* További helyet hagy a tartalom tetején */
+}
+
+.bemutatkozasszovege {
+    background-color: #f2e3e3;
+    padding: 20px;
+    margin-top: 20px;
+}
